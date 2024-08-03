@@ -204,7 +204,7 @@ int main(int argc,char **argv) {
 		handel_getreq(reqpath,fd,argv);	
 	}
 	else if(strcmp(reqpath,"POST") == 0){	
-		handle_portreq(reqpath,argv,fd,readbuffer[1024])
+		handle_portreq(reqpath,argv,fd,readbuffer);
 	}
 
 	close(server_fd);
